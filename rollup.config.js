@@ -10,7 +10,10 @@ export default [
     input: 'src/trianglify.js',
     external: ['chroma-js', 'delaunator'],
     plugins: [babel({ babelHelpers: 'bundled' }), bundleSize()],
-    output: { file: pkg.main, format: 'cjs' }
+    output: [
+      { file: pkg.main, format: 'cjs' },
+      { file: 'dist/trianglify.es.js', format: 'es'},
+    ]
   },
   {
     // build minified bundle to be used standalone for browser use
