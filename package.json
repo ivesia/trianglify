@@ -13,8 +13,7 @@
   },
   "dependencies": {
     "chroma-js": "^2.1.0",
-    "delaunator": "^4.0.1",
-    "canvas": "^2.6.1"
+    "delaunator": "^4.0.1"
   },
   "directories": {
     "example": "examples"
