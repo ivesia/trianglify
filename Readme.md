@@ -5,11 +5,21 @@ Trianglify is a library that I wrote to generate nice SVG background images like
 
 ![](https://cloud.githubusercontent.com/assets/347189/6771063/f8b0af46-d090-11e4-8d4c-6c7ef5bd9d37.png)
 
+---------
+## Append by AlphaTr
+
+- add TypeScript support
+- add ES Module support
+
+[**github**](https://github.com/ivesia/trianglify).
+
+----
+
 # Contents
-[📦 Getting Trianglify](#-getting-trianglify)  
-[🏎 Quickstart](#-quickstart)  
-[⚖️ Licensing](#%EF%B8%8F-licensing)  
-[📖 API](#-api)  
+[📦 Getting Trianglify](#-getting-trianglify)
+[🏎 Quickstart](#-quickstart)
+[⚖️ Licensing](#%EF%B8%8F-licensing)
+[📖 API](#-api)
 [🎨 Configuration](#-configuration)
 
 # 📦 Getting Trianglify
@@ -114,7 +124,7 @@ The array of colored polygons that make up the pattern, in the following format:
 // {x, y} center of the first polygon in the pattern
 pattern.polys[0].centroid
 
-// [i, i, i] three indexes into the pattern.points array, 
+// [i, i, i] three indexes into the pattern.points array,
 // defining the shape corners
 pattern.polys[0].vertexIndices
 
@@ -168,12 +178,12 @@ const canvasOpts = {
   // - a numeric value will render the canvas at that specific scale factor
   //   for example, 2.0 will render it at 2x resolution, wheras 0.5 will render
   //   at half resolution
-  // - 'false' will disable scaling, and the canvas will be rendered at the 
+  // - 'false' will disable scaling, and the canvas will be rendered at the
   //   exact resolution specified by `width, height`
   scaling: 'auto',
   // if the canvas is rendered at a different resolution than the {width, height}
   // trianglify will apply some inline style attributes to scale it back to
-  // the requested {width, height} options. Set applyCssScaling to false to 
+  // the requested {width, height} options. Set applyCssScaling to false to
   // disable this behavior.
   applyCssScaling: true
 }
